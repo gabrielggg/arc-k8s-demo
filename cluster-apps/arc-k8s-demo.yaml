@@ -26,7 +26,10 @@ spec:
         image: arck8sconformance.azurecr.io/samples/demo:v0.1.0
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8080
+          - containerPort: 8080
+        env:
+          - name: VAULT_AUTHENTICATION
+            value: KUBERNETES
         resources:
           requests:
             memory: "50Mi"
