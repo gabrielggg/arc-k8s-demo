@@ -30,6 +30,8 @@ spec:
         env:
           - name: VAULT_AUTHENTICATION
             value: KUBERNETES
+          - name: VAULT_AUTHENTICATION2
+            value: KUBERNETES2
         resources:
           requests:
             memory: "50Mi"
